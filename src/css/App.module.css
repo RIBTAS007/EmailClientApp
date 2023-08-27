@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.appContainer {
+  display: flex;
+  height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.fullWidthLayout {
+  flex: 1; 
+  max-width: 100%;
+}
+
+.masterSlaveLayout {
+  flex: 0 0 60%; 
+}
+
+.emailListContainer {
+  transition: width 0.3s ease; 
+}
+
+.emailBodyContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease; 
+}
+
+.emailList ul {
+  list-style-type: none;
+  padding: 0;
+  overflow-y: auto;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pagination {
+  margin-left: 40px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.pagination button.active {
+  background-color: #E1E4EA;
+  color: #636363;
+}
+
